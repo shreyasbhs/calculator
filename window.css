@@ -1,0 +1,114 @@
+body
+{
+    margin:0;
+
+}
+ul
+{
+    margin:0;
+    padding: 0;
+    list-style-type: none;
+}
+.wraper
+{
+    position: relative;
+  
+    background-color: rgb(33, 33, 53);
+    height:462px;
+    width:485px;
+    user-select: none;
+    
+}
+.screen
+{
+    position: relative;
+    top:0;
+    left:0;
+    width:100%;
+    height:20%;
+    background-color: rgb(240, 239, 239);
+    
+}
+#displayexp
+{
+    position: absolute;
+    z-index:1;
+    width:100%;
+    height:20%;
+    text-align: right;
+    font-size: 5vh;
+}
+#displayres
+{
+    position: absolute;
+    z-index:1;
+    width:100%;
+    height:80%;
+    top:20%;
+    text-align: right;
+    font-size: 10vh;
+}
+.panel
+{
+    position: absolute;
+    top:20%;
+    left:0.1%;
+    width:100%;
+    height:80%;
+    background-color:pink;
+    margin:0;
+    user-select: none;
+    
+}
+.npanel ul
+{
+    position: absolute;
+    background-color: gray;
+    height:100%;
+    width:75%;
+}
+.npanel ul li
+{
+    margin:0;
+    padding: 0;
+    width:33.33%;
+    height:20%;
+    float:left;
+    background-image:linear-gradient(to right bottom,rgb(184, 170, 170),rgb(158, 149, 149));
+    
+    text-align:center;
+    font-size:10vh;
+}
+.npanel ul li:hover,.oppanel ul li:hover
+{
+    background-image:linear-gradient(to right bottom,rgb(158, 149, 149),rgb(184, 170, 170));
+    
+}
+.npanel ul li:last-child
+{
+    position:absolute;
+    left:66.66%;
+    top:60%;
+}
+
+.npanel ul li::before,.oppanel ul li::before{
+    content: "";
+    display: block;
+    height: 25%;
+}
+.oppanel ul
+{
+    position: absolute;
+    width:25%;
+    height:100%;
+    left:75%;
+   
+}
+.oppanel ul li
+{
+    height: 20%;
+    text-align: center;
+    font-size: 10vh;
+    background-image:linear-gradient(to right bottom,rgb(184, 170, 170),rgb(158, 149, 149));
+}
+
